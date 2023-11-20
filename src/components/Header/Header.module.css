@@ -1,0 +1,178 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.logoContainer {
+  position: relative;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  margin-left: 100px;
+}
+
+.logoContainer h2 {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 2;
+}
+.logoContainer h3 {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #afafaf;
+  z-index: 2;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation a {
+  font-size: 18px;
+  color: white;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  text-decoration: none;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  color: #3f9c14;
+}
+
+.navigation a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navigation a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #3f9c14;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.downloadButton {
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #3f9c14;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: #2d6f0e;
+}
+.downloadButton::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  background: #3f9c14;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.downloadButton:hover {
+  color: #fff;
+}
+
+.downloadButton:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.downloadButton:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.downloadButton:active:before {
+  background: #56d31c;
+  transition: background 0s;
+}
+
+.auth {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2d6f0e;
+  border: 2px solid #3f9c14;
+  margin-right: 15px;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.auth img {
+  width: 50%;
+  height: 50%;
+}
+
+.auth:hover {
+  transform: scale(1.05);
+}
+
+.auth:active {
+  background-color: #56d31c;
+}

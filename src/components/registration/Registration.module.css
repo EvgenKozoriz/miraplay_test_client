@@ -1,0 +1,56 @@
+.registrationBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .registrationTitle {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .inputLabel {
+    color: #eaeaea;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  
+  .registrationInput {
+    box-sizing: border-box;
+    background: #1c1c1c;
+    border: 1px solid #454545;
+    border-radius: 10px;
+    color: #eaeaea;
+    font-size: 16px;
+    font-weight: 300;
+    height: 70px;
+    margin-bottom: 40px;
+    margin-top: 14px;
+    padding: 15px 25px;
+    width: 370px;
+  }
+  
+  .submitBtn {
+    background: #3f9c14;
+    background-position: 0;
+    border: none;
+    border-radius: 10px;
+    color: #eaeaea;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    height: 70px;
+    line-height: 143%;
+    transition: 0.2s ease-in-out;
+    width: 370px;
+  }
+
+  .submitBtn:hover {
+    background-color: #2d6f0e;
+  }
+  

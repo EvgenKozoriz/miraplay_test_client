@@ -1,0 +1,98 @@
+.loginBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+}
+
+.loginTitle {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.inputLabel {
+  color: #eaeaea;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.loginInput {
+  box-sizing: border-box;
+  background: #1c1c1c;
+  border: 1px solid #454545;
+  border-radius: 10px;
+  color: #eaeaea;
+  font-size: 16px;
+  font-weight: 300;
+  height: 70px;
+  margin-bottom: 40px;
+  margin-top: 14px;
+  padding: 15px 25px;
+  width: 370px;
+}
+
+.submitBtn {
+  background: #3f9c14;
+  background-position: 0;
+  border: none;
+  border-radius: 10px;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  height: 70px;
+  line-height: 143%;
+  transition: 0.2s ease-in-out;
+  width: 370px;
+}
+.submitBtn:hover {
+  background-color: #2d6f0e;
+}
+
+.loadingWave {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.loadingBar {
+  width: 20px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #3f9c14;
+  border-radius: 5px;
+  animation: loading-wave-animation 1s ease-in-out infinite;
+}
+
+.loadingBar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loadingBar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loadingBar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes loading-wave-animation {
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 50px;
+  }
+
+  100% {
+    height: 10px;
+  }
+}

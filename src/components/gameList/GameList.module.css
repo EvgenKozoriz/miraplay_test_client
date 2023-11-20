@@ -1,0 +1,59 @@
+.gameList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  background-color: #181818;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: left;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+.filterBlock {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.filterBtn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  color: #ffffff;
+  background: #242424;
+  border: 1px solid #454545;
+  border-radius: 5px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s, color 0.3s;
+}
+.filterBtn:focus {
+  background: #3f9c14;
+  color: #ffffff;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.showMoreBtn {
+  margin-top: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background: #242424;
+  border: 1px solid #454545;
+  cursor: pointer;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s, color 0.3s;
+}
+
+.showMoreBtn:hover {
+  background: #3f9c14;
+  color: #ffffff;
+}
